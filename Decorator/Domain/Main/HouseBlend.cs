@@ -8,6 +8,6 @@ public class HouseBlend : Beverage
 
     public override decimal Cost()
     {
-        return 1.99m;
+        return 3.99m;
     }
 }

@@ -1,8 +1,10 @@
+using Decorator.Domain.Enums;
+
 namespace Decorator.Domain;
 
 public abstract class Beverage
 {
-    protected string Description;
+    private string Description;  
 
     public Beverage()
     {
@@ -10,14 +12,21 @@ public abstract class Beverage
     }
     
     public Beverage(string description)
-    {
+    { 
         Description = description;
-    }
+    } 
 
     public virtual string GetDescription()
     {
         return Description;
-    }
-
+    }  
+    
+    public void SetBeverageSize(Size size)
+    {
+        Size = size;
+    } 
+     
+    public Size Size { get; private set; } 
+    
     public abstract decimal Cost();
-}
+} 
