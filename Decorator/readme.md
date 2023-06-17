@@ -1,2 +1,1 @@
-`Паттерн Декоратор` динамически наделяет объект новыми
-возможностями и является гибкой альтернативой субклассированию в области расширения функциональности.
+`The Decorator Pattern` attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
